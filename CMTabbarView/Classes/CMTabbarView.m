@@ -398,8 +398,9 @@ NSString *  const CMTabBoxBackgroundColor = @"CMBoxbackgroundColor";
 
 - (void)updateIndicatorFrameWithOriginX:(CGFloat)originX width:(CGFloat)width
 {
-    width -= self.tabPadding*2;
-    originX += (self.tabPadding/2.0f)*2;
+    //yangfan modified
+//    width -= self.tabPadding*2;
+//    originX += (self.tabPadding/2.0f)*2;
     CGFloat indicatorHeight = [self.indicatorAttributes[CMTabIndicatorViewHeight] floatValue];
     if (_selectionType == CMTabbarSelectionIndicator) {
         if (_locationType != CMTabbarIndicatorLocationNone) {
